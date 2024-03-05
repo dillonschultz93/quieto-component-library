@@ -1,1 +1,1 @@
-# quiet-component-library
+# Quieto Component Library

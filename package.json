@@ -22,7 +22,8 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@quieto/tokens": "^1.9.1",

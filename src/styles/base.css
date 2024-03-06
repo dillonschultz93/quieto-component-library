@@ -1,2 +1,114 @@
 @import './_variables.css';
 @import './_reset.css';
+
+/* Typography */
+body {
+  color: var(--color-text-primary);
+  font-family: var(--typography-family-sans);
+}
+
+/* Display and Heading Styles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--typography-weight-bold);
+}
+
+.display-lg {
+  font-size: var(--typography-display-lg-size);
+  line-height: var(--typography-display-lg-line-height);
+  letter-spacing: var(--typography-display-lg-tracking);
+}
+
+.display-m {
+  font-size: var(--typography-display-m-size);
+  line-height: var(--typography-display-m-line-height);
+  letter-spacing: var(--typography-display-m-tracking);
+}
+
+.display-s {
+  font-size: var(--typography-display-s-size);
+  line-height: var(--typography-display-s-line-height);
+  letter-spacing: var(--typography-display-s-tracking);
+}
+
+h1 {
+  font-size: var(--typography-headline-lg-size);
+  line-height: var(--typography-headline-lg-line-height);
+  letter-spacing: var(--typography-headline-lg-tracking);
+}
+
+h2 {
+  font-size: var(--typography-headline-m-size);
+  line-height: var(--typography-headline-m-line-height);
+  letter-spacing: var(--typography-headline-m-tracking);
+}
+
+h3 {
+  font-size: var(--typography-headline-s-size);
+  line-height: var(--typography-headline-s-line-height);
+  letter-spacing: var(--typography-headline-s-tracking);
+}
+
+h4 {
+  font-size: var(--typography-title-lg-size);
+  line-height: var(--typography-title-lg-line-height);
+  letter-spacing: var(--typography-title-lg-tracking);
+}
+
+h5 {
+  font-size: var(--typography-title-m-size);
+  line-height: var(--typography-title-m-line-height);
+  letter-spacing: var(--typography-title-m-tracking);
+}
+
+h6 {
+  font-size: var(--typography-title-s-size);
+  line-height: var(--typography-title-s-line-height);
+  letter-spacing: var(--typography-title-s-tracking);
+}
+
+/* Paragraph and Text Styles */
+
+.body-lg {
+  font-size: var(--typography-body-lg-size);
+  line-height: var(--typography-body-lg-line-height);
+  letter-spacing: var(--typography-body-lg-tracking);
+}
+
+.body-m, p {
+  font-size: var(--typography-body-m-size);
+  line-height: var(--typography-body-m-line-height);
+  letter-spacing: var(--typography-body-m-tracking);
+}
+
+.body-s {
+  font-size: var(--typography-body-s-size);
+  line-height: var(--typography-body-s-line-height);
+  letter-spacing: var(--typography-body-s-tracking);
+}
+
+/* Label Text Styles */
+
+.label-lg, label, button {
+  font-size: var(--typography-label-lg-size);
+  line-height: var(--typography-label-lg-line-height);
+  letter-spacing: var(--typography-label-lg-tracking);
+}
+
+.label-m {
+  font-size: var(--typography-label-m-size);
+  line-height: var(--typography-label-m-line-height);
+  letter-spacing: var(--typography-label-m-tracking);
+}
+
+.label-s {
+  font-size: var(--typography-label-s-size);
+  line-height: var(--typography-label-s-line-height);
+  letter-spacing: var(--typography-label-s-tracking);
+}
+
+/* Typography Style Modifiers */
+
+.bold {
+  font-weight: var(--typography-weight-bold);
+}

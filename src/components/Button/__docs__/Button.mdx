@@ -1,0 +1,45 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Example from './Example.tsx';
+import * as Button from './Button.stories.tsx';
+
+<Meta of={Button} title="Button" />
+
+# Button
+
+Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+
+#### Example
+
+<Canvas of={Button.Primary} />
+
+<Canvas of={Button.Neutral} />
+
+<Canvas of={Button.Ghost} />
+
+## Usage
+
+```ts
+import { Button } from '@quieto/components';
+
+const App = () => {
+  return (
+    <Button
+      kind="primary"
+      size="large"
+      onClick={() => console.log('Button clicked!')}
+    >
+      Click me
+    </Button>
+  );
+};
+
+export default App;
+
+```
+
+#### Props
+- **kind** (optional): The kind of button. Can be `primary`, `neutral`, or `ghost`. The default is `neutral`.
+- **size** (optional): The size of the button. Can be `small`, `medium`, or `large`. The default is `large`.
+- **icon** (optional): The icon to display inside of the button. Valid values can be found in the [Icon](/docs/components/icon) component.
+- **children**: The content to display inside of the button.
+- **onClick** (optional): The function to call when the button is clicked.

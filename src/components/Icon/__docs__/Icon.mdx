@@ -1,0 +1,36 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Example from './Example.tsx';
+import * as Icon from './Icon.stories.tsx';
+
+<Meta of={Icon} title="Icon" />
+
+# Icon
+
+Icon component with different sizes and colors.
+
+#### Example
+
+<Canvas of={Icon.Icon} />
+
+## Usage
+
+```ts
+import { Icon } from '@quieto/components';
+
+const App = () => {
+  return (
+    <div>
+      <Icon name="airdrop" size="14" />
+      <Icon name="airdrop" size="16" />
+      <Icon name="airdrop" size="24" />
+    </div>
+  );
+};
+
+export default App;
+
+```
+
+#### Props
+- **size** - A number that represents the size of the icon in pixels.
+- **name** - The name of the icon to be displayed. You can find the list of available icons [here](https://feathericons.com/).

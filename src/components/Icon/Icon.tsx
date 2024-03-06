@@ -7,14 +7,15 @@ export type IconProps = {
   name: keyof typeof ICONS;
 };
 
-const Icon: React.FC<IconProps> = ({ size, name }) => {
+const Icon: React.FC<IconProps> = ({ size, name, ...props }) => {
   return (
     <svg
       width={size}
       height={size}
-      viewBox={`0 0 ${size} ${size}`}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      data-testid="icon"
+      {...props}
     >
       {ICONS[name].map((path, index) => (
         <path
@@ -23,6 +24,7 @@ const Icon: React.FC<IconProps> = ({ size, name }) => {
           fill="currentColor"
           fillRule="evenodd"
           clipRule="evenodd"
+          transform={`scale(${size ? size / 24 : 24 / 24})`}
         />
       ))}
     </svg>

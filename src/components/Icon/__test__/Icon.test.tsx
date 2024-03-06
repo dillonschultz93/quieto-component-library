@@ -6,7 +6,7 @@ import Icon from '../Icon';
 describe('Icon component', () => {
   it('Should render the icon component', () => {
     render(<Icon size="16" name="airplay" />);
-    const icon = screen.getByRole('icon');
+    const icon = screen.getByTestId('icon');
     expect(icon).toBeInTheDocument();
   });
 });

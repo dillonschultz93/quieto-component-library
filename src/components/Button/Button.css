@@ -1,4 +1,113 @@
-@import '../../../node_modules/@quieto/tokens/dist/css/_core.css';
-@import '../../../node_modules/@quieto/tokens/dist/css/_light.css';
+@import '../../styles/base.css';
 
-.button {}
+.button {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--button-gap);
+  font-weight: var(--typography-weight-bold);
+  border-radius: var(--button-shape);
+  transition: all 150ms ease-in-out;
+  min-width: 96px;
+  border: 1px solid transparent;
+}
+
+/* Button Sizes */
+
+.large {
+  height: var(--button-size-lg);
+  padding: 0 var(--button-padding-large-left);
+}
+
+.medium {
+  height: var(--button-size-m);
+  padding: 0 var(--button-padding-medium-left);
+}
+
+.small {
+  height: var(--button-size-s);
+  padding: 0 var(--button-padding-small-left);
+}
+
+/* Primary */
+
+.primary {
+  color: var(--button-primary-text);
+  fill: var(--button-primary-text); /* For SVG icons */
+  background-color: var(--button-primary-bg-idle);
+}
+
+.primary:hover {
+  background-color: var(--button-primary-bg-hover);
+}
+
+.primary:focus {
+  background-color: var(--button-primary-bg-hover);
+}
+
+.primary:active {
+  background-color: var(--button-primary-bg-active);
+}
+
+.primary:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Neutral */
+
+.neutral {
+  color: var(--button-neutral-text);
+  fill: var(--button-neutral-text); /* For SVG icons */
+  background-color: var(--button-neutral-bg-idle);
+  border-color: var(--button-neutral-border-idle);
+}
+
+.neutral:hover {
+  background-color: var(--button-neutral-bg-hover);
+  border-color: var(--button-neutral-border-hover);
+}
+
+.neutral:focus {
+  background-color: var(--button-neutral-bg-hover);
+  border-color: var(--button-neutral-border-hover);
+}
+
+.neutral:active {
+  background-color: var(--button-neutral-bg-active);
+  border-color: var(--button-neutral-border-active);
+}
+
+.neutral:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Ghost */
+
+.ghost {
+  color: var(--button-neutral-text);
+  fill: var(--button-neutral-text); /* For SVG icons */
+  background-color: transparent;
+}
+
+.ghost:hover {
+  background-color: var(--button-ghost-bg-hover);
+}
+
+.ghost:focus {
+  background-color: var(--button-ghost-bg-hover);
+}
+
+.ghost:active {
+  background-color: var(--button-ghost-bg-active);
+}
+
+.ghost:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}

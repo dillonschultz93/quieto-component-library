@@ -1,0 +1,31 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Example from './Example.tsx';
+import * as Checkbox from './Checkbox.stories.tsx';
+
+<Meta of={Checkbox} title="Checkbox" />
+
+# Checkbox
+
+Checkbox component is used to allow users to select one or more items from a list of options.
+
+#### Example
+
+<Canvas of={Checkbox.Checkbox} />
+
+## Usage
+
+```ts
+import { Checkbox } from '@quieto/components';
+
+const App = () => {
+  return (
+    <Checkbox
+      label="Checkbox"
+      checked={true}
+      onChange={() => console.log('Checkbox clicked!')}
+    />
+  );
+};
+
+export default App;
+```

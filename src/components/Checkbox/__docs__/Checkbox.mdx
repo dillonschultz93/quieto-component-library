@@ -15,13 +15,17 @@ Checkbox component is used to allow users to select one or more items from a lis
 ## Usage
 
 ```ts
+import { useState } from 'react';
 import { Checkbox } from '@quieto/components';
 
 const App = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
   return (
     <Checkbox
       label="Checkbox"
-      checked={true}
+      checked={isChecked}
+      value="value"
       onChange={() => console.log('Checkbox clicked!')}
     />
   );

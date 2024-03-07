@@ -13,6 +13,7 @@ export const Checkbox: Story = {
   args: {
     label: 'Checkbox',
     checked: false,
+    value: 'value',
     onChange: () => console.log('Checkbox clicked'),
   },
 };

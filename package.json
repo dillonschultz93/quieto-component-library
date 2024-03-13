@@ -17,7 +17,8 @@
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
     "build": "tsc && vite build",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "generate-component": "node util/generateComponentFiles.js"
   },
   "author": "Dillon Schultz <dillonschultz93@gmail.com>",
   "repository": {
@@ -44,6 +45,7 @@
     "@types/react": "^18.2.63",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
+    "colors": "^1.4.0",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",

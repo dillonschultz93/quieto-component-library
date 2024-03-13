@@ -5,6 +5,7 @@ import { ICONS } from './Icons';
 export type IconProps = {
   size?: number;
   name: keyof typeof ICONS;
+  onClick?: () => void;
 };
 
 const Icon: React.FC<IconProps> = ({ size, name, ...props }) => {
@@ -14,6 +15,7 @@ const Icon: React.FC<IconProps> = ({ size, name, ...props }) => {
       height={size}
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      onClick={props.onClick}
       data-testid="icon"
       {...props}
     >

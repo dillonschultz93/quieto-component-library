@@ -1,0 +1,7 @@
+@import '../../styles/base.css';
+
+.chip {
+  /* Add your styles here */
+  display: block;
+  border: 1px solid red;
+}

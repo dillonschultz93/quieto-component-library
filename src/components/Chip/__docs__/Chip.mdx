@@ -1,0 +1,28 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import Example from './Example.tsx';
+import * as Chip from './Chip.stories.tsx';
+
+<Meta of={Chip} title="Chip" />
+
+# Chip
+
+This is where you will describe the Chip component.
+
+#### Example
+
+<Canvas  of={Chip.Chip}/>
+
+## Usage
+```tsx
+import { Chip } from '@quieto/components';
+
+const App = () => {
+  return <Chip>Label</Chip>
+};
+
+export default App;
+
+```
+
+#### Props
+- `propName` - Description of prop

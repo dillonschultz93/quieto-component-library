@@ -1,7 +1,74 @@
 @import '../../styles/base.css';
 
 .chip {
-  /* Add your styles here */
-  display: block;
-  border: 1px solid red;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--dimension-space-xs);
+  padding: 0 var(--chip-padding-right) 0 var(--chip-padding-left);
+  background-color: var(--chip-static-bg);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--chip-static-border);
+  border-radius: var(--chip-shape);
+  height: var(--chip-size-height);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.chip span {
+  color: var(--chip-static-text);
+  font-size: var(--typography-label-lg-size);
+  line-height: var(--typography-label-lg-line-height);
+  letter-spacing: var(--typography-label-lg-tracking);
+}
+
+.chip svg {
+  fill: var(--chip-static-text);
+  cursor: pointer;
+}
+
+.toggleable {
+  cursor: pointer;
+  background-color: var(--chip-toggle-bg-unchecked-idle);
+  border-color: var(--chip-toggle-border-unchecked-idle);
+  transition: all 150ms ease-in-out;
+}
+
+.toggleable:hover {
+  background-color: var(--chip-toggle-bg-unchecked-hover);
+  border-color: var(--chip-toggle-border-unchecked-hover)
+}
+
+.toggleable:focus {
+  background-color: var(--chip-toggle-bg-unchecked-hover);
+  border-color: var(--chip-toggle-border-unchecked-hover)
+}
+
+.toggleable:active {
+  background-color: var(--chip-toggle-bg-unchecked-active);
+  border-color: var(--chip-toggle-border-unchecked-active)
+}
+
+.toggleable input {
+  display: none;
+}
+
+.toggleable:has(input:checked) {
+  background-color: var(--chip-toggle-bg-checked-idle);
+  border-color: var(--chip-toggle-border-checked-idle);
+}
+
+.toggleable:has(input:checked):hover {
+  background-color: var(--chip-toggle-bg-checked-hover);
+  border-color: var(--chip-toggle-border-checked-hover);
+}
+
+.toggleable:has(input:checked):focus {
+  background-color: var(--chip-toggle-bg-checked-hover);
+  border-color: var(--chip-toggle-border-checked-hover);
+}
+
+.toggleable:has(input:checked):active {
+  background-color: var(--chip-toggle-bg-checked-active);
+  border-color: var(--chip-toggle-border-checked-active);
 }

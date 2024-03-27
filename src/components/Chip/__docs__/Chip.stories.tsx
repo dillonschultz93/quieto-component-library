@@ -9,9 +9,26 @@ const meta: Meta<typeof Example> = {
 export default meta;
 type Story = StoryObj<typeof Example>;
 
-export const Chip: Story = {
+export const Default: Story = {
   args: {
     children: 'Chip',
-    isDismissable: true,
+    isDismissible: false,
+    isToggleable: false,
+  },
+};
+
+export const Dismissible: Story = {
+  args: {
+    children: 'Chip',
+    isDismissible: true,
+    isToggleable: false,
+  },
+};
+
+export const Toggleable: Story = {
+  args: {
+    children: 'Chip',
+    isDismissible: false,
+    isToggleable: true,
   },
 };

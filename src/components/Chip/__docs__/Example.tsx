@@ -1,9 +1,18 @@
 import React, { FC } from 'react';
 import Chip, { ChipProps } from '../Chip';
 
-const Example: FC<ChipProps> = ({ children, isDismissable, onClick }) => {
+const Example: FC<ChipProps> = ({
+  children,
+  isDismissible,
+  isToggleable,
+  onClick,
+}) => {
   return (
-    <Chip isDismissable={isDismissable} onClick={onClick}>
+    <Chip
+      isDismissible={isDismissible}
+      onClick={onClick}
+      isToggleable={isToggleable}
+    >
       {children}
     </Chip>
   );
